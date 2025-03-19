@@ -47,3 +47,11 @@ a:visited {
     object-fit: cover;
     border-radius: 8px;
 }
+
+.logo {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0)000;
+    object-fit: contain;
+}
