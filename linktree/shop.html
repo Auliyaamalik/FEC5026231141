@@ -23,7 +23,7 @@
             } 
 
             .container-nav {
-                max-width: 500px;
+                max-width: 600px;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -91,6 +91,8 @@
             }
 
             .card {
+                max-width: 600px;
+                width: 100%;
                 background: none;
                 border-radius: 30px;
                 text-align: center;
@@ -141,6 +143,24 @@
                 color: #000000 !important; /* Mengubah warna icon menu pada hover */
             }
 
+            .linktree-box {
+                width: 256px;
+                height: 47px;
+                background: rgba(255, 255, 255, 0.75);
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 8px;
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
+                cursor: pointer;
+            }
+
+            .linktree-box:hover {
+                background: rgba(255, 255, 255, 0.95);
+                box-shadow: rgba(0, 0, 0, 0.3) 0px,6px,12px 0px;
+            }
+
         </style>
     </head>
     <body>
@@ -151,7 +171,7 @@
                 </button>
             </nav>
         </div>
-        
+
         <div class="d-flex flex-column align-items-center">
             <div class="text-center mb-3" id="profile-picture">
                 <img class="rounded-circle object-contain"
@@ -180,7 +200,7 @@
             </nav>
         </div>
         
-        <div class="container mt-4">
+        <div class="d-flex justify-content-center mt-4 px-3">
             <div class="card d-flex align-items-center w-100">
                 <button class="btn" data-toggle="modal" data-target="#accessories">
                     <div class="row justify-content-center">
@@ -222,7 +242,7 @@
             </div>
         </div>
 
-        <div class="container mt-3">
+        <div class="d-flex justify-content-center mt-3 px-3">
             <div class="card d-flex align-items-center w-100">
                 <button class="btn" data-toggle="modal" data-target="#collection">
                     <div class="row justify-content-center">
@@ -264,5 +284,29 @@
             </div>
         </div>
     </div>
+
+    <div class="d-flex justify-content-center align-items-center mt-3 mb-5">
+        <div class="linktree-box">
+            <!-- Icon -->
+            <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                style="flex-shrink: 0">
+                <path
+                    d="M13.5108 5.85343L17.5158 1.73642L19.8404 4.11701L15.6393 8.12199H21.5488V11.4268H15.6113L19.8404 15.5345L17.5158 17.8684L11.7744 12.099L6.03299 17.8684L3.70842 15.5438L7.93745 11.4361H2V8.12199H7.90944L3.70842 4.11701L6.03299 1.73642L10.038 5.85343V0H13.5108V5.85343ZM10.038 16.16H13.5108V24.0019H10.038V16.16Z"
+                    fill="#000000"
+                    transform="scale(0.5) translate(12 12)" />
+            </svg>
+            <!-- Text -->
+            <div
+                style="color: #222; font-weight: 600;">Join Laufey on
+                Linktree
+            </div>
+        </div>
+    </div>
+
     </body>
 </html>
